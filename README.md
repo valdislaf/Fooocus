@@ -1,3 +1,16 @@
+> [!NOTE]
+> **This is a fork** of `lllyasviel/Fooocus`.
+>
+> ### Docker for NVIDIA RTX 50xx (SM 12.0 / sm_120, e.g. RTX 5060 Ti)
+> Docker updated to use **PyTorch cu128** + newer **xFormers** to avoid CUDA “no kernel image” issues on SM 12.0 GPUs.
+> See `Dockerfile` and `docker-compose.yml`.
+
+> **Tested on RTX 5060 Ti (16 GB).**
+
+> **Windows outputs bind-mount example (docker-compose.yml → `services.app.volumes`):**  
+> `F:\fooocus_outputs:/content/win_outputs`  
+> ⚠️ **Change `F:\fooocus_outputs` to any directory on your system** where you want generated images to be saved.
+
 <div align=center>
 <img src="https://github.com/lllyasviel/Fooocus/assets/19834515/483fb86d-c9a2-4c20-997c-46dafc124f25">
 </div>
